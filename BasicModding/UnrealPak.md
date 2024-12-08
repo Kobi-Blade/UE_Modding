@@ -1,5 +1,5 @@
 # Creating Pak Files
-To ensure your mod is loaded by the game, it needs to be in a `.pak` file, and if our game has IOStore enabled then 3 files; `.pak`, `.utoc`, and `.ucas`.
+To ensure your mod is loaded by the game, it needs to be in a `.pak` file.
 
 To get UnrealPak scripts, download it from [UnrealPak](https://github.com/Dmgvol/UE_Modding/raw/main/Tools/UnrealPak.zip)
 

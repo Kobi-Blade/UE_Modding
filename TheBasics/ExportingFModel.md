@@ -4,6 +4,9 @@ FModel is one of the best tools to browse, view and export all of the file types
 If your game has AES: [Adding AES](#adding-aes-key-optional).<br>
 If your game has usmapping: [Adding mappings](#adding-usmapping-optional) _(mostly UE5+)_.
 
+> [!CAUTION]
+> Exported FModel assets are in a format that only allows them to be read-only. This means that these assets cannot be edited in a valid way for modding (e.g. with [UAssetGUI](../BasicModding/UAssetGUI.md)), nor can they be repackaged.
+
 # Creating Game Preset
 Launch the tool, Directory -> Selector.
 
