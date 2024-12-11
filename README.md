@@ -78,8 +78,8 @@ I won't be covering any more complex witch-craft so if you've learned all of the
 
 ## Game Memory
 Useful for creating speedrunning livesplit, custom randomizers and even trainers.
-- [Finding CE pointers]()  (Coming Soon)
-- [Finding offsets using UE4SS]() (Coming Soon)
+- [Finding CE pointers](./GameMemory/findingPointers.md)
+- [Finding offsets using UE4SS](./GameMemory/findingPointers2.md)
 
 
 ##  Blender (3D Modelling)
