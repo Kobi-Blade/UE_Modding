@@ -1,9 +1,9 @@
 # Extracting IoStore Cooked Assets
 > [!IMPORTANT]
-> This only guide applies when there are `.ucas`, `.utoc` & `.pak` files inside `Content/Paks` folder.
+> This guide only applies when there are `.ucas`, `.utoc` & `.pak` files inside `Content/Paks` folder.
 
 > [!CAUTION]
-> [FModel](UsingFModel.md) can open `IoStore` containers/paks, and can even let you export them. However, these assets are in a format that only allows them to be read-only. This means that these assets cannot be edited in a valid way for modding (e.g. with [UAssetGUI](../BasicModding/UAssetGUI.md)), nor can they be repackaged.
+> [FModel](UsingFModel.md) can open `IoStore` containers/paks, and can even let you export them. However, these assets are in a format are incompatible with [UAssetGUI](../BasicModding/UAssetGUI.md), but can be edited by manual [hex editing](../BasicModding/HexEditing.md). 
 
 ## ZenTools
 
@@ -28,8 +28,11 @@ Simply follow the [usage guide](https://github.com/LongerWarrior/ZenTools/tree/5
 > If your game is UE5.1, make sure to include the `-ZenPackageVersion=Initial` option in your command.
 > If your game has an AES key (i.e. is encrypted), you can find it in the [Adding AES](AesKey.md) guide, then use the `-AES=` option in your command.
 
-> [!TIP]
+> [!CAUTION]
 > Make sure to use quotation marks `""` whenever you are specifying file paths if they contain any spaces.
+
+> [!TIP]
+> If it is taking a long time to extract, try using package filters to filter certain folders, for example `/Game/Content/Blueprints`. You can find project folders by opening the pak in FModel
 
 #### Example commands
 
@@ -41,13 +44,17 @@ If your game is UE5.1 and has encryption:
 
 `ZenTools.exe ExtractPackages "Path to UE5.1 game/Content/Paks" "Output directory" -ZenPackageVersion=Initial -AES=0x12345678`
 
-If your game is UE5.2 amd has encryption:
+If your game is UE5.2 and has encryption:
 
 `ZenTools.exe ExtractPackages "Path to UE5.2 game/Content/Paks" "Output directory" -AES=0x12345678`
 
+If your game is very large (e.g. 100GB+) and you want to only extract certain asset paths, say, weapon blueprints folder:
+
+`ZenTools.exe ExtractPackages "Path to game/Content/Paks" "Output directory" -PackageFilter=/Game/Content/Blueprints/Weapons`
+
 #### Repacking UE5 IoStore files
 
-Follow this guide
+Follow [this guide](../BasicModding/IoStorePacking.md#scenario-1-packing-cooked-assets).
 
 ### ZenTools for UE4
 
@@ -60,8 +67,14 @@ If your game is encrypted, note that there is no `-Aes=` or equivalent option, y
 }
 ```
 
-> [!WARNING]
+> [!CAUTION]
 > The keys.json does not support `0x` at the start of your AES key, so make sure to remove that in the file.
+
+> [!CAUTION]
+> Make sure to use quotation marks `""` whenever you are specifying file paths if they contain any spaces.
+
+> [!TIP]
+> If it is taking a long time to extract, try using package filters to filter certain folders, for example `/Game/Content/Blueprints`. You can find project folders by opening the pak in FModel
 
 #### Example commands
 
@@ -73,6 +86,10 @@ If game has no encryption:
 
 `ZenTools.exe ExtractPackages "Path to UE4 game/Content/Paks" "Output directory"`
 
+If your game is very large (e.g. 100GB+) and you want to only extract certain asset paths, say, enemy blueprints folder:
+
+`ZenTools.exe ExtractPackages "Path to game/Content/Paks" "Output directory" -PackageFilter=/Game/Content/Blueprints/Enemies`
+
 #### Repacking UE4 IoStore files
 
-Follow this guide
+Follow [this guide](../BasicModding/IoStorePacking.md#scenario-1-packing-cooked-assets).

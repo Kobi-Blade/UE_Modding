@@ -8,8 +8,11 @@ __For UE4__
 __For UE5__
 - Navigate to [Cooking UE5](#cooking-ue5) <br>
 
+> [!IMPORTANT]  
+> For `IoStore` games, first navigate to Edit -> Project settings -> Packaging, then make sure `Use Io Store` at the top of the packaging settings is checked. Then follow the rest of this guide as normal.
 
-# Cooking UE4 (UnrealPak Route)
+
+## Cooking UE4 (UnrealPak Route)
 Once you're ready, click File -> Cook Content for Windows.
 
 ![](/Media/Compiling/ue4_1.png)
@@ -24,7 +27,7 @@ From here, you will have to use UnrealPak which you can learn more about packagi
 <br>
 Based on which assets you've created, you will need to copy-paste them into the mod folder (covered in unrealPak guide). 
 
-# Cooking UE4 (Generating-Chunks Route)
+## Cooking UE4 (Generating-Chunks Route)
 Another method of cooking UE content is by packaging specific assets into predefined chunks.<br>
 it's faster as there is no need for UnrealPak but It's limited as it packs only what's in the editor. <br>
 Meaning it's not suitable if you want to combine modified assets or precooked assets into that mod.
@@ -38,7 +41,7 @@ File -> Package Project -> Windows
 
 <hr>
 
-# Cooking UE5
+## Cooking UE5
 For UE5, modders have to assign their assets to specific chunk ids, and there are 2 methods to do so, which will be covered below.
 
 The two methods are [Manual Chunks](#manual-chunk-ids) and [BulkChunk](#bulk-assign-using-datatabledt). <br>

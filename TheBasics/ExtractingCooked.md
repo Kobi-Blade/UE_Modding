@@ -2,7 +2,7 @@
 > [!IMPORTANT]
 > This only guide applies when there are NOT `.ucas` or `.utoc` files inside `Content/Paks` folder. There may be `.pak`, `.sig` or other files or folders.   
 
-## Repak
+## repak
 
 For this guide, we will be using [repak](https://github.com/trumank/repak). This tool is widely used as it:
 1. Is very easy to download and use
@@ -52,9 +52,11 @@ Unpacking is simple, just follow the help menu.
 
 #### Pakchunks
 
-If your game uses pakchunks (many smaller `.pak` files instead of one big one), you have to do a tiny bit more work. Repak can only process one pak at a time, so you can't just have some wildcard to unpak all pak files in a directory.
+If the game uses pakchunks (many smaller `.pak` files instead of one big one), Windows users have to do tiny bit more work.
 
-To unpack them all at once, do the following:
+If you are on Linux, you can simply use the `*.pak` wildcard.
+
+If you are on Windows, to unpack them all at once, do the following:
 1. Open powershell (by similar way as above, such as typing `pwsh` into file path box)
 2. Use your normal command, but instead of specifying your specific `.pak` file, you can type `repak unpack (gci *.pak)`
 

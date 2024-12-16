@@ -22,8 +22,8 @@ Just so you get the idea and the principles of UE4/5 modding and how it works.
 We will start with how we can browse and export game files.
 
 - [Finding AES key (.pak encryption)](./TheBasics/AesKey.md)
-- [Extracting Cooked Assets](./TheBasics/ExtractingCooked.md) (`.pak` only)
-- [Extracting IoStore Cooked Assets](./TheBasics/ExtractingIoStore.md) (`.pak`/`.utoc`/`.ucas`)
+- [Extracting Cooked Assets - repak](./TheBasics/ExtractingCooked.md) (`.pak` only)
+- [Extracting IoStore Cooked Assets - ZenTools](./TheBasics/ExtractingIoStore.md) (`.pak`/`.utoc`/`.ucas`)
 - [Exporting - FModel](./TheBasics/ExportingFModel.md)
 - [Exporting - UModel](./TheBasics/ExportingUModel.md)
 - [Previewing Animations - UModel](./TheBasics/UModelAnimations.md)
@@ -36,9 +36,8 @@ This is essential to <b>ANY</b> value changing.</br>
 - [Editing UAsset values - Hex](./BasicModding/HexEditing.md) *(Manual hex, in case UAssetGUI fails)*
 - [Editing UMaps - stove](./BasicModding/EditingUmaps.md) (UE4, `.pak` only)
 - [Disabling/Removing textures of objects](./BasicModding/DisablingObjects.md)
-- [Creating Pak Files - UnrealPak](./BasicModding/UnrealPak.md) (UE4, `.pak` only)
-- [Creating Pak Files - Repak](./BasicModding/) (UE4/UE5, `.pak` only)
-- [Creating Pak Files - IoStore](./BasicModding/IoStorePacking.md) (UE4/UE5, `.pak`/`.utoc`/`.ucas`)
+- [Creating Pak Files](./BasicModding/UnrealPak.md) (`.pak` only)
+- [Creating Pak Files - IoStore](./BasicModding/IoStorePacking.md) (`.pak`/`.utoc`/`.ucas`)
 - [Mod example - modifying Blueprint default values](./BasicModding/example1.md) (UE4)
 
 ## Intermediate Modding
