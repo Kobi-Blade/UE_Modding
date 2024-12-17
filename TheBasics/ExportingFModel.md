@@ -53,7 +53,7 @@ Exporting is simple, just right-click on the file(s) you want, and pick the righ
 <br>
 Different asset types can be exported differently.<br>
 
--   `.uasset` such as blueprints, DataTables, Structs - export directly or Json (read-only).
+- Zen `.uasset` such as blueprints, DataTables, Structs - export directly or Json **(Zen assets are incompatible with UAssetGUI, you can only edit with [hex editing](../BasicModding/HexEditing.md))**.
 - Textures - as `.png`.
 - Models such as StaticMesh or SkeletalMesh (characters) - `.psk`
 - Animations - `.psa`
@@ -63,3 +63,4 @@ It doesn't have to be as exact, it really depends on the case and mod.
 <br>
 For example: exporting a skeletal mesh as `.uasset` to edit the used textures by changing the paths.
 
+To repack a Zen uasset exported by FModel, you can use [UnrealReZen](../BasicModding/IoStorePacking.md).

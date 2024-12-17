@@ -1,6 +1,8 @@
 # Using UAssetGUI
 UAssetGUI is a user-interfaced tool for essentially hex editing but without seeing any hex.
 
+You can download the latest release of UAssetGUI [here](https://github.com/atenfyr/UAssetGUI/releases).
+
 ## Example - Changing clip size for Trepang2
 For this example, we will change the magazine size for the SMG weapon, which is located inside the weapon's blueprint called `BP_SMG`.
 
