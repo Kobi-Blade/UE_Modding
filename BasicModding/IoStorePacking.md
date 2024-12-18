@@ -12,7 +12,7 @@ There are three scenarios when you need to pack IoStore assets, and the methods 
 
 ### For UE5
 
-Download this tool called [IoStorePackager](https://github.com/Buckminsterfullerene02/UE-Modding-Tools/blob/main/Loose%20Files/IOStorePackagev2.zip). It is a very simple GUI commandlet where you input file paths following the examples, and it calls UnrealPak from the Unreal Engine version you have installed with all the right arguments. 
+Download this tool called [IoStorePackager](https://github.com/Buckminsterfullerene02/UE-Modding-Tools/raw/main/Loose%20Files/IOStorePackagev2.zip). It is a very simple GUI commandlet where you input file paths following the examples, and it calls UnrealPak from the Unreal Engine version you have installed with all the right arguments. 
 
 You can watch [this video](https://www.youtube.com/watch?v=89s0akNvpU4) that guides you how to use `IoStorePackager`:
 
