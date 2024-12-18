@@ -16,7 +16,7 @@ Download this tool called [IoStorePackager](https://github.com/Buckminsterfuller
 
 You can watch [this video](https://www.youtube.com/watch?v=89s0akNvpU4) that guides you how to use `IoStorePackager`:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/89s0akNvpU4?si=rMpESKZKsplRrqCn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![UE modding (5.4 w/ IoStore) ](https://img.youtube.com/vi/89s0akNvpU4/0.jpg)](https://www.youtube.com/watch?v=89s0akNvpU4 "UE modding (5.4 w/ IoStore) ")
 
 ### For UE4
 
