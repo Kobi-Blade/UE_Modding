@@ -86,15 +86,15 @@ Useful for creating speedrunning livesplit, custom randomizers and even trainers
 
 
 ##  Blender (3D Modelling)
-- [Importing models (.glTF2 and .psk files)]() (Coming Soon)
-- [Importing animations (.psa files)]() (Coming Soon)
+- [Importing models (.psk and .glTF2 files)](./Misc/BlenderImportModels.md)
+- [Importing animations (.psa files)](./Misc/BlenderImportAnimations.md)
 
-## Substance Painter (Texturing)
-- [Importing textures to Substance]() (Coming Soon)
-- [Exporting to UE4 - Albedo, Normal and ORM]() (Coming Soon)
+## Texturing
+- [Importing packed textures to Blender]() (Coming Soon)
+- [Importing packed textures to Substance Painter]() (Coming Soon)
+- [Exporting from Substance Painter to UnrealEngine]() (Coming Soon)
 
-
----
+<hr>
 
 # Useful Links/Tools
 
