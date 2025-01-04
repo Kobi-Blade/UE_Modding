@@ -14,10 +14,10 @@ _(download the correct version, and follow the instructions in that repo readme)
 
 Once installed navigate to File -> Import -> choose PSK or GLTF and provide the file.
 
+![](/Media/ImportModels/blender4.png)
+
 > [!IMPORTANT]  
 > For PSK files - **always** import unscaled! (scroll down for more info)
-
-![](/Media/ImportModels/blender4.png)
 
 ## Blender 3
 The plugin link for Blender 3: [blender3d_import_psk_psa](https://github.com/Befzz/blender3d_import_psk_psa).<br>
@@ -33,10 +33,10 @@ Once installed navigate to File -> Import -> choose PSK or GLTF and provide the 
 <hr>
 
 ## Import unscaled
-When working with Skeletal meshes, it's important to import unscaled and export scaled down to `0.01`. <br>
+When working with skeletal meshes, it's important to import unscaled and export scaled down to `0.01`. <br>
 Why? Because it breaks some skeletal bones on import to UE4/5.
 
 ![](/Media/ImportModels/ImportUnscaled.png)
 
-It's used for skeletal mesh (character) modding, which is covered in [Changing SkeletalMesh](./IntermediateModding/ChangingSK.md) guide.<br>
+It's used for skeletal mesh (character) modding, which is covered in [Changing SkeletalMesh](/IntermediateModding/ChangingSK.md) guide.<br>
 So if you're just importing for non-modding purposes, import however you want.
