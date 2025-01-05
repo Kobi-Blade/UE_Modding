@@ -12,10 +12,12 @@ These two tools every modder needs to have:<br>
 - [FModel](https://fmodel.app/)
 
 ## Where to start?
-If you're completely new, I would suggest picking on a simple mod idea/goal that will teach you the basics, for example; texture swap or just a value change within one of the files.
-</br>
-Just so you get the idea and the principles of UE4/5 modding and how it works.
-<br><br>
+If you're completely new, I would suggest picking on a simple mod idea/goal that will teach you the basics.<br>
+For example: learn how to extract game files, modify a texture/model and repackage it into a mod (UE4/5). <br>
+Or modify default values of a blueprint, like the max ammo of a weapon (UE4).
+
+Just so you get the idea and the principles of UE modding and how it works.
+
 <i>(If you're new and want to jump head-first into custom maps... then don't, that doesn't work like that).</i>
 
 ## The Basics
@@ -78,21 +80,20 @@ At this stage, you already know how to swap/modify any UAsset and do blueprints 
 ## Masterclass
 I won't be covering any more complex witch-craft so if you've learned all of the above, then you can continue learning and evolving on your own.<br>
 
-
 ## Game Memory
 Useful for creating speedrunning livesplit, custom randomizers and even trainers.
 - [Finding CE pointers](./GameMemory/findingPointers.md)
 - [Finding offsets using UE4SS](./GameMemory/findingPointers2.md)
 
 
-##  Blender (3D Modelling)
+##  Blender
 - [Importing models (.psk and .glTF2 files)](./Misc/BlenderImportModels.md)
 - [Importing animations (.psa files)](./Misc/BlenderImportAnimations.md)
 
-## Texturing
-- [Importing packed textures to Blender]() (Coming Soon)
-- [Importing packed textures to Substance Painter]() (Coming Soon)
-- [Exporting from Substance Painter to UnrealEngine]() (Coming Soon)
+## Textures
+- [Importing packed textures to Blender](./Misc/BlenderImportTextures.md)
+- [Importing packed textures to Substance Painter](./Misc/SubstanceImportTextures.md) 
+- [Exporting from Substance Painter to UnrealEngine](./Misc/SubstanceExport.md) 
 
 <hr>
 
@@ -146,6 +147,7 @@ Useful for creating speedrunning livesplit, custom randomizers and even trainers
 - Truman 
 - Lisht/Kein
 - KunoDemetries
+- HyperModule
 
 ---
 
