@@ -108,7 +108,7 @@ Useful for creating speedrunning livesplit, custom randomizers and even trainers
 ### UE
 - [Epic Launcher](https://www.epicgames.com/store/en-US/)
 - [Universal Unreal Engine 4 Unlocker (UUU)](https://framedsc.github.io/GeneralGuides/universal_ue4_consoleunlocker.htm)
-- [UnrealPak](https://github.com/Dmgvol/UE_Modding/raw/main/Tools/UnrealPak.zip)
+- [UnrealPak](https://github.com/Dmgvol/UE_Modding/raw/main/Tools/UnrealPak.zip) - written by [FluffyQuack](https://www.fluffyquack.com/)
 - [UE4SS - UE4/5 Scripting System](https://github.com/UE4SS-RE/RE-UE4SS)
 
 ### 3D Modeling

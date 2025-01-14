@@ -12,7 +12,8 @@ There are two ways you can pack your mod files into a `.pak` file:
 
 UnrealPak and repak are fine to use with any UE version. repak is generally faster and has more advanced features like configurable mount points & pak version, but is not required for the majority of users, and overall ease of use is slightly more difficult than the below UnrealPak scripts. But if one doesn't work for you, you at least can try the other. 
 
-UnrealPak is present in every UE install, but can be extracted into a standalone program. You can download the standalone version from [here](https://github.com/Dmgvol/UE_Modding/raw/main/Tools/UnrealPak.zip), which also comes with a couple of batch scripts to make calling the program easier for you.
+UnrealPak is present in every UE install, but can be extracted into a standalone program.<br>
+You can download the standalone version from here: [UnrealPak by FluffyQuack](https://github.com/Dmgvol/UE_Modding/raw/main/Tools/UnrealPak.zip) , which also comes with a couple of batch scripts to make calling the program easier for you.
 
 *You can also install [repak_wrappers](https://github.com/Mythical-Github/repak_wrappers/archive/refs/heads/main.zip), which has an identical user experience to UnrealPak. If you download this, you can follow the "If using UnrealPak" parts of the guide.*
 
