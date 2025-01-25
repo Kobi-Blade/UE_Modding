@@ -22,7 +22,7 @@ We will start with how we can browse and export game files.
 - [Finding AES key (.pak encryption)](./TheBasics/AesKey.md)
 - [Extracting Cooked Assets - repak](./TheBasics/ExtractingCooked.md) (`.pak` only)
 - [Extracting IoStore Cooked Assets - ZenTools](./TheBasics/ExtractingIoStore.md) (`.pak`/`.utoc`/`.ucas`)
-- [Extracting usmap - UE4SS](./TheBasics/Extractingusmap.md)
+- [Extracting mappings - UE4SS](./TheBasics/Extractingusmap.md)
 - [Exporting - FModel](./TheBasics/ExportingFModel.md)
 - [Exporting - UModel](./TheBasics/ExportingUModel.md)
 - [Previewing Animations - UModel](./TheBasics/UModelAnimations.md)
