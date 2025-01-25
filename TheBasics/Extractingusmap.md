@@ -1,8 +1,8 @@
-# Extracting `usmap` using Unreal Engine Scripting System
+# Extracting `usmap` using Unreal Engine 4/5 Scripting System
 
 This guide provides detailed instructions to install and configure the Unreal Engine Scripting System (UE4SS/RE-UE4SS) for extracting `usmap` files from a game.
 
-## Step 1: Install the Unreal Engine Scripting System
+## Step 1: Install the Unreal Engine 4/5 Scripting System
 
 1. **Download UE4SS**:
    - Visit the official repository: [UE4SS-RE](https://github.com/UE4SS-RE/RE-UE4SS) and download the latest version.
