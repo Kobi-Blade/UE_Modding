@@ -14,19 +14,19 @@ This guide provides detailed instructions to install and configure the Unreal En
 
 ## Step 2: Modify the Configuration File
 
-Once UE4SS is installed, adjust its configuration file to enable features required for extracting the `usmap`.
+Once UE4SS is installed, adjust its configuration file to enable features required for extracting the `usmap` and setting UE version.
 
 1. **Locate the Configuration File**:
    - Look for the configuration file, typically named `UE4SS-settings.ini`.
 
 2. **Edit the Configuration File**:
-   - Open the `.ini` file in a text editor (e.g., Notepad++ or VSCode) and apply the following changes:
+   - Open the `UE4SS-settings.ini` file in a text editor (e.g., Notepad++ or VSCode) and apply the Engine Version in the EngineVersionOverride section:
 
-   ```ini
-   [Debug]
-   ConsoleEnabled = 0
-   GuiConsoleEnabled = 1
-   GuiConsoleVisible = 1
+     ![](/Media/UHT/1.png)
+
+   - In the Debug section make sure you enable `ConsoleEnabled`, `GuiConsoleEnabled`, and `GuiConsoleVisible`:
+  
+     ![](/Media/UHT/2.png)
 
 ---
 
@@ -34,7 +34,11 @@ Once UE4SS is installed, adjust its configuration file to enable features requir
 
 1. **Launch the game**:
    - Verify that the GUI console appears (it should be visible if configured in `UE4SS-settings.ini`).
+   
+    ![](/Media/Extractmappings/1.png)
 
-3. **Output Mapping File**:
+2. **Output Mapping File**:
    - Use the Dumper tab of the UE4SS Debugging Tool to output the .usmap file.
    - The file will be output to: `Binaries\Win64\Mappings.usmap`
+   
+    ![](/Media/Extractmappings/2.png)
