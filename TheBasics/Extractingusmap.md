@@ -4,10 +4,10 @@ This guide provides detailed instructions to install and configure the Unreal En
 
 ## Step 1: Install the Unreal Engine Scripting System
 
-1. **Download UE4SS-RE/RE-UE4SS**:
-   - Visit the official repository: [UE4SS-RE/RE-UE4SS](https://github.com/UE4SS-RE/RE-UE4SS) and download the latest version.
+1. **Download UE4SS**:
+   - Visit the official repository: [UE4SS-RE](https://github.com/UE4SS-RE/RE-UE4SS) and download the latest version.
 
-2. **Install UE4SS-RE/RE-UE4SS**:
+2. **Install UE4SS**:
    - Extract the downloaded files into the bin directory, (Binaries\Win64) next to the game executable.
 
 ---
