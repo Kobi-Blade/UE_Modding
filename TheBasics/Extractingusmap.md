@@ -35,10 +35,10 @@ Once UE4SS is installed, adjust its configuration file to enable features requir
 1. **Launch the game**:
    - Verify that the GUI console appears (it should be visible if configured in `UE4SS-settings.ini`).
    
-    ![](/Media/Extractmappings/1.png)
+     ![](/Media/Extractmappings/1.png)
 
 2. **Output Mapping File**:
    - Use the Dumper tab of the UE4SS Debugging Tool to output the .usmap file.
    - The file will be output to: `Binaries\Win64\Mappings.usmap`
    
-    ![](/Media/Extractmappings/2.png)
+     ![](/Media/Extractmappings/2.png)
