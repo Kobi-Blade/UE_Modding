@@ -1,10 +1,6 @@
-
-
 # UE4/5 Modding Guides 
 A collection of UE4 (and 5) Modding Guides.</br>
 The perfect place for anyone new, to learn UE modding and start creating mods <u><strong>today</strong></u>.</br>
-
-</br></br>
 
 ## Before we begin...
 These two tools every modder needs to have:<br>
@@ -26,6 +22,7 @@ We will start with how we can browse and export game files.
 - [Finding AES key (.pak encryption)](./TheBasics/AesKey.md)
 - [Extracting Cooked Assets - repak](./TheBasics/ExtractingCooked.md) (`.pak` only)
 - [Extracting IoStore Cooked Assets - ZenTools](./TheBasics/ExtractingIoStore.md) (`.pak`/`.utoc`/`.ucas`)
+- [Extracting mappings - UE4SS](./TheBasics/Extractingusmap.md)
 - [Exporting - FModel](./TheBasics/ExportingFModel.md)
 - [Exporting - UModel](./TheBasics/ExportingUModel.md)
 - [Previewing Animations - UModel](./TheBasics/UModelAnimations.md)
