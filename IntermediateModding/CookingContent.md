@@ -49,7 +49,9 @@ The two methods are [Manual Chunks](#manual-chunk-ids) and [BulkChunk](#bulk-ass
 Once the chunks are assigned, simply [Package it](#packaging-ue5).
 
 ### Manual Chunk IDs
-Right-click on the asset(s) you would like to cook -> Asset Actions -> Assign to Chunk.
+First enable Chunk ID assignment by going to Edit -> Editor Preferences -> search for "chunk" -> enable "Allow ChunkID Assignments".
+
+Then right-click on the asset(s) you would like to cook -> Asset Actions -> Assign to Chunk.
 
 ![](/Media/Compiling/UE5_1.png)
 
