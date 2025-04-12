@@ -110,3 +110,24 @@ For example, Ghostrunner game:<br>
 4. Make sure the name ends with `_P` **(IMPORTANT)**.<br>
 For example: `myMod_P.pak`
 
+### Optional: Sig files
+If your game is running Unreal Engine 4.27 or lower, and there is a `.sig` file next to the PAK file, you will need to follow these steps to make it boot:
+1. Duplicate the sig file
+2. rename it to your custom pak file
+3. test it
+
+Example:
+in the folder structure: `Grip\Grip\Content\Paks`
+there are the files:
+```
+Grip-WindowsNoEditor.pak
+Grip-WindowsNoEditor.sig
+```
+if your modded pak file is called `mod_P.pak`, you will need to duplicate `Grip-WindowsNoEditor.sig` and rename it to `mod_P.sig`.
+It would then look like this:
+```
+Grip-WindowsNoEditor.pak
+Grip-WindowsNoEditor.sig
+mod_P.pak
+mod_P.sig
+```
