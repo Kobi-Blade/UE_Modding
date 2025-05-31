@@ -21,7 +21,7 @@ We will start with how we can browse and export game files.
 
 - [Finding AES key (.pak encryption)](./TheBasics/AesKey.md)
 - [Extracting Cooked Assets - repak](./TheBasics/ExtractingCooked.md) (`.pak` only)
-- [Extracting IoStore Cooked Assets - ZenTools](./TheBasics/ExtractingIoStore.md) (`.pak`/`.utoc`/`.ucas`)
+- [Extracting IoStore Cooked Assets - retoc/ZenTools](./TheBasics/ExtractingIoStore.md) (`.pak`/`.utoc`/`.ucas`)
 - [Extracting mappings - UE4SS](./TheBasics/Extractingusmap.md)
 - [Exporting - FModel](./TheBasics/ExportingFModel.md)
 - [Exporting - UModel](./TheBasics/ExportingUModel.md)
@@ -36,7 +36,7 @@ This is essential to <b>ANY</b> value changing.</br>
 - [Editing UMaps - stove](./BasicModding/EditingUmaps.md) (UE4, `.pak` only)
 - [Disabling/Removing textures of objects](./BasicModding/DisablingObjects.md)
 - [Creating Pak Files](./BasicModding/UnrealPak.md) (`.pak` only)
-- [Creating Pak Files - IoStore](./BasicModding/IoStorePacking.md) (`.pak`/`.utoc`/`.ucas`)
+- [Creating IoStore Pak Files](./BasicModding/IoStorePacking.md) (`.pak`/`.utoc`/`.ucas`)
 - [Mod example - modifying Blueprint default values](./BasicModding/example1.md) (UE4)
 
 ## Intermediate Modding
