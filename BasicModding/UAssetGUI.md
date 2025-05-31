@@ -130,4 +130,4 @@ If done correctly, no errors will appear and you can double-check that everythin
 
 Make sure you save, so UAssetGUI can generate the updated `.uasset` and `.uexp` files.
 
-Once done, simply pack using UnrealPak.
+Once done, simply pack using UnrealPak, repak, or retoc, depending on your needs.

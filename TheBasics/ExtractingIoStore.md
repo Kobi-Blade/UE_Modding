@@ -3,15 +3,41 @@
 > This guide only applies when there are `.ucas`, `.utoc` & `.pak` files inside `Content/Paks` folder.
 
 > [!CAUTION]
-> [FModel](UsingFModel.md) can open `IoStore` containers/paks, and can even let you export them. However, these assets are in a format are incompatible with [UAssetGUI](../BasicModding/UAssetGUI.md), but can be edited by manual [hex editing](../BasicModding/HexEditing.md). 
+> [FModel](UsingFModel.md) can open `IoStore` containers/paks, and can even let you export them. However, these assets are incompatible with [UAssetGUI](../BasicModding/UAssetGUI.md), but can be edited by manual [hex editing](../BasicModding/HexEditing.md). 
+
+Because some tools out there only support the traditional cooked asset format, such as [UAssetGUI](../BasicModding/UAssetGUI.md), you need to get the right format of assets first.
+
+The following tools, retoc and Zentools, can be used to extract the traditional cooked assets (`.uasset`/`.uexp`) from the `IoStore` container files, which are `.ucas`, `.utoc` & `.pak`.
+
+> [!TIP]
+> It is recommended to try using retoc first as it is generally faster and more reliable. If you encounter any issues, you can try using ZenTools as a backup.
+
+## retoc
+
+[retoc](https://github.com/trumank/retoc) is not only able to pack and unpack `IoStore` containers, but also convert between Zen assets and Legacy assets (found in `.pak` containers).
+
+To use retoc, you need to download the latest release from the [releases page](https://github.com/trumank/retoc/releases). Download the file you need based on your system or use the powershell script provided at the top if you are on Windows.
+
+Navigate to the directory where you downloaded `retoc.exe` and open the terminal. 
+
+Run `retoc.exe --help` to see the available commands and options. 
+
+`to-legacy` is used to convert from the `IoStore` format to the cooked asset format you can edit with UAssetGUI.
+
+> [!TIP]
+> It is recommended to use `--filter` to specify which assets you want to convert, especially if you are working with large games. For example, `--filter /Game/Content/Blueprints` will only convert assets in the `Blueprints` folder.
+
+Use `--aes-key` to specify the AES key if your game is encrypted. You can find the AES key in the [Adding AES](AesKey.md) guide.
+
+Here is an awesome video guide on using retoc as a command line tool:
+
+[![UE modding (5.4 w/ IoStore): retoc + UAssetGUI](https://img.youtube.com/vi/2nkhdAREFXI/0.jpg)](https://www.youtube.com/embed/2nkhdAREFXI "UE modding (5.4 w/ IoStore): retoc + UAssetGUI")
 
 ## ZenTools
 
-ZenTools is a tool that extracts the traditional cooked assets (`.uasset`/`.uexp`) from the `IoStore` container files, which are `.ucas`, `.utoc` & `.pak`. Because some tools out there only support the traditional cooked asset format, such as [UAssetGUI](../BasicModding/UAssetGUI.md), you need to get the right format of assets first.
-
 There are two versions of ZenTools that you need to get depending on your game's UE version; 
-- [ZenTools for UE5](https://github.com/LongerWarrior/ZenTools/tree/5.1-5.2) (if your game is UE5)
-- [ZenTools for UE4](https://github.com/WistfulHopes/ZenTools-UE4) (obviously if your game is UE4)
+- [ZenTools for UE5](https://github.com/Buckminsterfullerene02/UE-Modding-Tools/tree/main/Loose%20Files/ZenTools) (if your game is UE5.1 - UE5.4)
+- [ZenTools for UE4](https://github.com/WistfulHopes/ZenTools-UE4) (if your game is UE4)
 
 ### ZenTools for UE5
 

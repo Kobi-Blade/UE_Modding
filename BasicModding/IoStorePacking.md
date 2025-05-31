@@ -3,14 +3,29 @@
 > [!IMPORTANT]
 > This guide only applies when there are `.ucas`, `.utoc` & `.pak` files inside `Content/Paks` folder.
 
-There are three scenarios when you need to pack IoStore assets, and the methods differ depending on them:
-1. You have hex edited cooked assets extracted from [ZenTools](../TheBasics/ExtractingIoStore.md) with [UAssetGUI](UAssetGUI.md) or similar
+There are three scenarios when you need to pack `IoStore` assets, and the methods differ depending on them:
+1. You have hex edited cooked assets extracted from [retoc or ZenTools](../TheBasics/ExtractingIoStore.md) with [UAssetGUI](UAssetGUI.md) or similar
 2. You have a UE project and have created assets within it
-3. You have extracted IoStore Zen assets from [FModel](../TheBasics/ExportingFModel.md) and wish to repack them
+3. You have extracted `IoStore` Zen assets from [FModel](../TheBasics/ExportingFModel.md) and wish to repack them
 
 ## Scenario 1: Packing cooked assets
 
-### For UE5
+### retoc
+
+If you have not already, follow the same steps as [Extracting IoStore - retoc](../TheBasics/ExtractingIoStore.md#retoc) to download retoc.
+
+`to-zen` is used to convert back from the cooked asset format to the `IoStore` format.
+
+> [!TIP]
+> It is recommended to use `--version` to specify the version of the asset you want to convert back to `IoStore` format. For example, `--version UE5_4` for UE5.4 assets.
+
+Here is an awesome video guide on using retoc and UAssetGUI to unpack, edit and repack assets:
+
+[![UE modding (5.4 w/ IoStore): retoc + UAssetGUI](https://img.youtube.com/vi/2nkhdAREFXI/0.jpg)](https://www.youtube.com/embed/2nkhdAREFXI "UE modding (5.4 w/ IoStore): retoc + UAssetGUI")
+
+### If retoc does not work...
+
+#### For UE5
 
 Download this tool called [IoStorePackager](https://github.com/Buckminsterfullerene02/UE-Modding-Tools/raw/main/Loose%20Files/IOStorePackagev2.zip). It is a very simple GUI commandlet where you input file paths following the examples, and it calls UnrealPak from the Unreal Engine version you have installed with all the right arguments. 
 
@@ -18,7 +33,7 @@ You can watch [this video](https://www.youtube.com/watch?v=89s0akNvpU4) that gui
 
 [![UE modding (5.4 w/ IoStore) ](https://img.youtube.com/vi/89s0akNvpU4/0.jpg)](https://www.youtube.com/watch?v=89s0akNvpU4 "UE modding (5.4 w/ IoStore) ")
 
-### For UE4
+#### For UE4
 
 Use this [IoStorePackager-UE4](https://gist.github.com/Buckminsterfullerene02/0f7233d5dda97c82039ba932c2bc8fb7). Similar to above, but you also need a C++ template project for the game, as `ZenTools-UE4` does not output the same manifest files as `ZenTools` that UE needs to create the container files.
 
@@ -37,4 +52,4 @@ Then, follow the [cooking content](../IntermediateModding/CookingContent.md) gui
 Use the tool [UnrealReZen](https://github.com/rm-NoobInCoding/UnrealReZen). The instructions are quite straight-forward, but be warned, that there is no alternative tool to UnrealReZen for packing FModel Zen `.uassets`.
 
 > [!CAUTION]
-> This tool does not support extracting assets from ZenTools extracted files.
+> This tool does not support extracting assets from retoc or ZenTools extracted files.
