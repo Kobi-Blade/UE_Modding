@@ -17,7 +17,7 @@ Once you're ready, click File -> Cook Content for Windows.
 
 ![](/Media/Compiling/ue4_1.png)
 
-After a while, the cooking will be completed and you will be able to find the cooked content inside the Saved folder of your project.
+After a while, the cooking will be completed, and you will be able to find the cooked content inside the Saved folder of your project.
 
 ```
 ProjectName\Saved\Cooked\WindowsNoEditor\ProjectName\Content\...
@@ -29,11 +29,11 @@ Based on which assets you've created, you will need to copy-paste them into the 
 
 ## Cooking UE4 (Generating-Chunks Route)
 Another method of cooking UE content is by packaging specific assets into predefined chunks.<br>
-it's faster as there is no need for UnrealPak but It's limited as it packs only what's in the editor. <br>
+It's faster as there is no need for UnrealPak, but it's limited as it packs only what's in the editor. <br>
 Meaning it's not suitable if you want to combine modified assets or precooked assets into that mod.
 
 Follow the packaging process in the UE5 section as it's the same procedure.<br>
-And once you're done with assigning to chunk:
+And once you're done with assigning to a chunk:
 File -> Package Project -> Windows
 
 > [!IMPORTANT]  
@@ -44,12 +44,12 @@ File -> Package Project -> Windows
 ## Cooking UE5
 For UE5, modders have to assign their assets to specific chunk ids, and there are 2 methods to do so, which will be covered below.
 
-The two methods are [Manual Chunks](#manual-chunk-ids) and [BulkChunk](#bulk-assign-using-datatabledt). <br>
+The two methods are [Manual Chunks](#manual-chunk-ids) and [BulkChunk](#bulk-assign-using-dataassetda). <br>
 
 Once the chunks are assigned, simply [Package it](#packaging-ue5).
 
 ### Manual Chunk IDs
-First enable Chunk ID assignment by going to Edit -> Editor Preferences -> search for "chunk" -> enable "Allow ChunkID Assignments".
+First, enable Chunk ID assignment by going to Edit -> Editor Preferences -> search for "chunk" -> enable "Allow ChunkID Assignments".
 
 Then right-click on the asset(s) you would like to cook -> Asset Actions -> Assign to Chunk.
 
@@ -63,8 +63,8 @@ _(Look at the Paks folder)_
 
 You can double-check the assigned chunk ID of assets, by selecting all of the assets, and then clicking on Audit Assets.
 
-### Bulk Assign using DataTable(DT)
-This method will assign all (or explicit) files within the **same** folder, which has its advantages and disadvantages.
+### Bulk Assign using DataAsset(DA)
+This method assigns all (or explicit) files within the **same** folder, which has advantages and disadvantages.
 
 Right-click to create a new asset -> Miscellaneous -> Data Asset.
 
@@ -78,13 +78,13 @@ Pick the `PrimaryAssetLabel` from the list.
 Once created, open the DataAsset, and:
 - Set the Priority to 1.
 - Pick any Chunk Id from 0 to 10,000.
-- set "Apply Recursively" if you have multiple folders.
+- Set "Apply Recursively" **ONLY** if you want to pack all files, including parent objects of those files.
 - Set `Cook Rule` to `Always Cook`.
-- Check `Label assets in My Directory` field.
+- Set `Label assets in My Directory` field, if you want to pack all files within the same folder.
 - (Optional) You can hand-pick specific assets/blueprints that you wish to pack.
 
 Note: Using DataAsset will pack everything inside the folder.<br>
-So if you want to pack specific ones, make sure to specify them in Explicit section.
+So if you want to pack specific ones, make sure to specify them in the Explicit section.
 
 ![](/Media/Compiling/UE5_4.png)
 
