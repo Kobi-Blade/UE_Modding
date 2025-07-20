@@ -25,7 +25,7 @@ Run `retoc.exe --help` to see the available commands and options.
 `to-legacy` is used to convert from the `IoStore` format to the cooked asset format you can edit with UAssetGUI.
 
 > [!TIP]
-> It is recommended to use `--filter` to specify which assets you want to convert, especially if you are working with large games. For example, `--filter /Game/Content/Blueprints` will only convert assets in the `Blueprints` folder.
+> It is recommended to use `--filter` to specify which assets you want to convert, especially if you are working with large games. For example, `--filter "/Content/Content/Blueprints"` will only convert assets in the `Blueprints` folder.
 
 Use `--aes-key` to specify the AES key if your game is encrypted. You can find the AES key in the [Adding AES](AesKey.md) guide.
 
