@@ -49,6 +49,7 @@ Dummying/replacing Assets like textures, materials, static meshes, and SkeletalM
 - [Changing SkeletalMesh](./IntermediateModding/ChangingSK.md)
 - [Merging SkeletalMesh](./IntermediateModding/MergingSK.md)
 - [Replacing Fonts](./IntermediateModding/ReplacingFonts.md)
+- [Translation Mods](./IntermediateModding/TranslationMod.md)
 
 ## Advanced Modding
 - [Dummying a Material for MaterialInstances](./AdvancedModding/ReplicatingMI.md)
