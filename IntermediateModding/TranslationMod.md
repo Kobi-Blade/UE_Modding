@@ -4,6 +4,10 @@ This guide covers the steps of translating the game's default language (`.locres
 > [!NOTE]  
 > This guide assumes you're familiar with FModel (exporting) and UnrealPak/repak (for packaging).
 
+
+> [!IMPORTANT]  
+> If your game is UE5.6 & IoStore - you **must** follow the [UE5.6 Changes](#ue56-version--iostore) after you've made the mod, in order for your translation mod to be recognized by the game.
+
 ## Preparation
 For this example, I will be translating a game called [Trepang2](https://store.steampowered.com/app/1164940/Trepang2/) from English to Polish using AI.
 
@@ -103,3 +107,15 @@ For more information about how to package your mod, view [Cooking Content guide]
 
 ## Results
 ![](/Media/locres/locres8.png)
+
+<br><br><br>
+
+--- 
+
+### UE5.6 version + IoStore
+If your game is UE5.6 with IoStore (Paks folder containing `.ucas` and `.utoc`), follow the next steps for the game to recognize your mod:
+
+1. Navigate to Paks folder and duplicate the two `global` files; `global.ucas` and `global.utoc`.
+2. Name the newly duplicated files to match your mod file.
+
+![](/Media/locres/UE56_changes.png)
