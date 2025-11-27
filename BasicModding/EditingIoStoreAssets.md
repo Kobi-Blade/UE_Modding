@@ -18,7 +18,7 @@ For this example, I will be modding [The Last Caretaker](https://store.steampowe
 Open the game files using FModel and find an asset that you're interested in editing its value(s).
 
 > [!NOTE]
-> If you don't know how to setup FModel, make sure to read the [FModel Guide](./TheBasics/ExportingFModel.md) on how to configure it.
+> If you don't know how to setup FModel, make sure to read the [FModel Guide](/TheBasics/ExportingFModel.md) on how to configure it.
 
 ![](/Media/EditingWithRetoc/retocEdit1.png)
 
