@@ -38,6 +38,7 @@ This is essential to <b>ANY</b> value changing.</br>
 - [Creating Pak Files](./BasicModding/UnrealPak.md) (`.pak` only)
 - [Creating IoStore Pak Files](./BasicModding/IoStorePacking.md) (`.pak`/`.utoc`/`.ucas`)
 - [Mod example - modifying Blueprint default values](./BasicModding/example1.md) (UE4)
+- [Editing IoStore Assets - retoc](./BasicModding/EditingIoStoreAssets.md) (`.pak`/`.utoc`/`.ucas`) ![new](https://img.shields.io/badge/←-NEW-brightgreen)   
 
 ## Intermediate Modding
 Dummying/replacing Assets like textures, materials, static meshes, and SkeletalMeshes (such as characters). </br>
